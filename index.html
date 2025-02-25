@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peddy</title>
+    <!-- Tailwind and CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <style>
+      .font-lato {
+        font-family: "Lato", serif;
+      }
+    </style>
+  </head>
+  <body class="font-lato container mx-auto">
+    <header>
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 text-base text-[#131313] rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li>
+                  <a>Shop</a>
+                </li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <img src="./images/logo.webp" alt="" />
+            <a class="text-2xl font-black ml-3">Peddy</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-base text-[#131313]">
+              <li><a>Home</a></li>
+              <li>
+                <a>Shop</a>
+              </li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <img
+              class="h-5 w-5"
+              src="https://img.icons8.com/?size=100&id=eJvXJFMTOzvJ&format=png&color=000000"
+              alt=""
+            />
+          </div>
+        </div>
+      </nav>
+      <!-- Banner section -->
+      <nav class="my-14 p-5">
+        <div class="text-center">
+          <h4 class="text-xl font-bold text-[#13131399]">
+            Bringing Families Together ❤️‍🔥
+          </h4>
+          <h1 class="text-2xl lg:text-7xl font-black text-[#131313] mt-5">
+            Your Path to Adoption <br />
+            Starts Here
+          </h1>
+          <p class="text-base font-regular text-[#131313] mt-7">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking <br />
+            at its layout. The point of using Lorem Ipsum is that it has a.
+          </p>
+          <a href="#adopt_best_friend"
+            ><button
+              class="mt-8 w-40 font-bold rounded-xl py-4 bg-teal-600 text-white hover:bg-teal-800"
+            >
+              View More
+            </button></a
+          >
+        </div>
+        <div class="flex justify-center items-center mt-10">
+          <img src="./images/pet.webp" alt="" />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Adopt your best friend -->
+      <section id="adopt_best_friend" class="my-20">
+        <div class="text-center space-y-6 p-5">
+          <h2 class="text-5xl font-black text-[#131313]">
+            Adopt Your Best Friend
+          </h2>
+          <p class="text-base text-[#131313B3] font-regular">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a <br />
+            page when looking at its layout. The point of using Lorem Ipsum is
+            that it has a.
+          </p>
+        </div>
+        <!-- Paddy categories -->
+        <nav
+          class="flex justify-center gap-2 lg:gap-10 my-12 p-5"
+          id="categories"
+        ></nav>
+        <!-- best deal and sort button -->
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-4 mt-8 p-4"
+        >
+          <button
+            class="flex items-center justify-center gap-2 bg-yellow-500 text-white font-bold text-sm md:text-lg px-4 md:px-6 py-2 md:py-3 rounded-full shadow-md transition-all duration-300 ease-in-out hover:scale-105 w-1/2 md:w-auto border-2 border-transparent hover:border-yellow-600 focus:border-yellow-600 focus:bg-white focus:text-yellow-600"
+          >
+            🔥 Best Deal For U
+          </button>
+
+          <button
+            class="flex items-center justify-center gap-2 bg-blue-500 text-white font-bold text-sm md:text-lg px-4 md:px-6 py-2 md:py-3 rounded-full shadow-md transition-all duration-300 ease-in-out hover:scale-105 w-1/2 md:w-auto border-2 border-transparent hover:border-blue-600 focus:border-blue-600 focus:bg-white focus:text-blue-600"
+          >
+            📊 Sort by Price
+          </button>
+        </div>
+      </section>
+      <!-- All pets -->
+      <section
+        id="all-pet"
+        class="my-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 p-5"
+      ></section>
+    </main>
+    <script src="./scripts/allpets.js"></script>
+  </body>
+</html>
