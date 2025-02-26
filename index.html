@@ -137,6 +137,7 @@
           </button>
 
           <button
+            id="sort-price-btn"
             class="flex items-center justify-center gap-2 bg-blue-500 text-white font-bold text-sm md:text-lg px-4 md:px-6 py-2 md:py-3 rounded-full shadow-md transition-all duration-300 ease-in-out hover:scale-105 w-1/2 md:w-auto border-2 border-transparent hover:border-blue-600 focus:border-blue-600 focus:bg-white focus:text-blue-600"
           >
             📊 Sort by Price
@@ -144,11 +145,28 @@
         </div>
       </section>
       <!-- All pets -->
-      <section
-        id="all-pet"
-        class="my-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 p-5"
-      ></section>
+      <section class="flex flex-col md:flex-row gap-5">
+        <!-- All Pets Section (Left Side) -->
+        <div
+          id="all-pet"
+          class="my-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 p-5"
+        ></div>
+        <!-- Liked Pets Section (Right Side) -->
+        <div id="liked-pets-container" class="my-20 p-5">
+          <h2 class="text-2xl font-black text-[#131313] text-center mb-6">
+            Liked Pets
+          </h2>
+          <div
+            id="liked-pets"
+            class="grid grid-cols-2 md:grid-cols-2 gap-5"
+          ></div>
+        </div>
+      </section>
+      <!-- Liked Pets Section -->
     </main>
+
     <script src="./scripts/allpets.js"></script>
+    <script src="./scripts/sort.js"></script>
+    <script src="./scripts/addToLikedPets.js"></script>
   </body>
 </html>

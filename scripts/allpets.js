@@ -41,7 +41,7 @@ const displyCategories = (categories) => {
     "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-5";
 
   categories.forEach((item) => {
-    console.log(item);
+    // console.log(item);
     const buttonContainer = document.createElement("div");
     buttonContainer.className = "w-full flex justify-center";
 
@@ -57,7 +57,7 @@ const displyCategories = (categories) => {
 };
 // Display all pets
 const displayAllPets = (allPet) => {
-  console.log(allPet);
+  // console.log(allPet);
   const petContainer = document.getElementById("all-pet");
   petContainer.innerHTML = "";
   allPet.forEach((pet) => {
@@ -93,13 +93,20 @@ const displayAllPets = (allPet) => {
     </div>
     </div>
     <div class ="flex items-center">
-        <button class ="btn"> <img  class ="h-5 w-5 text-[#5A5A5A]" src="https://img.icons8.com/?size=100&id=24816&format=png&color=000000"> </button>
-        <button class ="btn text-[#0E7A81]"> Adopt </button>
+        <button  class ="btn like-button"> <img  class ="h-5 w-5 text-[#5A5A5A]" src="https://img.icons8.com/?size=100&id=24816&format=png&color=000000"> </button>
+        <button  class ="btn text-[#0E7A81]"> Adopt </button>
         <button class = "btn text-[#0E7A81]"> Details </button>
     </div>
   </div>
 </div>
     `;
+
+    // **Find the Like button inside the card**
+    const likeButton = card.querySelector(".like-button");
+
+    // **Attach event listener**
+    likeButton.addEventListener("click", () => addToLikedPets(pet));
+
     petContainer.append(card);
   });
 };
