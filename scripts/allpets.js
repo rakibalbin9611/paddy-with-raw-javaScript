@@ -65,7 +65,7 @@ const displayAllPets = (allPet) => {
 
     const card = document.createElement("div");
     card.classList = "card card-compact";
-    card.innerHTML = `<div>
+    card.innerHTML = `<div class="w-80">
   <figure>
     <img class = "h-full w-full object-cover rounded-xl"
       src=${pet.image}
@@ -114,7 +114,7 @@ const displayAllPets = (allPet) => {
 // Display error message
 const displayErrorMessage = () => {
   const petContainer = document.getElementById("all-pet");
-  petContainer.innerHTML = `<div class="text-center col-span-full">
+  petContainer.innerHTML = `<div class="text-center col-span-full ">
     <img class="mx-auto mb-4 w-64 h-64" src="./images/error.webp"/>
     <h2 class="text-3xl font-bold text-red-500">Oops! Sorry, there is no data here.</h2>
   </div>`;
