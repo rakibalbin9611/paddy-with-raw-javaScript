@@ -95,7 +95,7 @@ const displayAllPets = (allPet) => {
     <div class ="flex items-center">
         <button  class ="btn like-button"> <img  class ="h-5 w-5 text-[#5A5A5A]" src="https://img.icons8.com/?size=100&id=24816&format=png&color=000000"> </button>
         <button  class ="btn text-[#0E7A81]"> Adopt </button>
-        <button class = "btn text-[#0E7A81]"> Details </button>
+        <button class = "btn details-button text-[#0E7A81]"> Details </button>
     </div>
   </div>
 </div>
@@ -106,6 +106,11 @@ const displayAllPets = (allPet) => {
 
     // **Attach event listener**
     likeButton.addEventListener("click", () => addToLikedPets(pet));
+
+    // find the details button inside the card**
+    const detailsButton = card.querySelector(".details-button");
+    // Attach event listener
+    detailsButton.addEventListener("click", () => loadPetDetails(pet.petId));
 
     petContainer.append(card);
   });

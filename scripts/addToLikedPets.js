@@ -13,3 +13,23 @@ const addToLikedPets = (pet) => {
 
   likedPetsContainer.append(petThumbnail);
 };
+
+// load pet details through modal
+const loadPetDetails = async (petId) => {
+  const res = await fetch(
+    `https://openapi.programming-hero.com/api/peddy/pet/${petId}`
+  );
+  const data = await res.json();
+  showPetDetails(data.petData);
+};
+
+// showPetDetails
+const showPetDetails = (pet) => {
+  const detailContainer = document.getElementById("modal-content");
+
+  detailContainer.innerHTML = ` <img src='${pet.image}'/>
+  <p class='p-3'> ${pet.pet_details} </p>
+  `;
+
+  document.getElementById("customModal").showModal();
+};
