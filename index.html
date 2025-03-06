@@ -25,8 +25,8 @@
       }
     </style>
   </head>
-  <body class="font-lato container mx-auto">
-    <header>
+  <body class="font-lato">
+    <header class="container mx-auto">
       <nav>
         <div class="navbar bg-base-100">
           <div class="navbar-start">
@@ -107,7 +107,7 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="container mx-auto">
       <!-- Adopt your best friend -->
       <section id="adopt_best_friend" class="my-20">
         <div class="text-center space-y-6 p-5">
@@ -161,6 +161,50 @@
       </section>
       <!-- Liked Pets Section -->
     </main>
+    <!-- Footer -->
+    <footer
+      class="footer sm:footer-horizontal bg-[#131313] text-white p-10 py-20"
+    >
+      <nav>
+        <div class="flex gap-2 items-center justify-center">
+          <img class="h-5 w-5" src="./images/logo.webp" alt="" />
+          <h6 class="e text-white text-xl font-black">Peddy</h6>
+        </div>
+        <a class="link link-hover">Branding</a>
+        <a class="link link-hover">Design</a>
+        <a class="link link-hover">Marketing</a>
+        <a class="link link-hover">Advertisement</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">About us</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Jobs</a>
+        <a class="link link-hover">Press kit</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Legal</h6>
+        <a class="link link-hover">Terms of use</a>
+        <a class="link link-hover">Privacy policy</a>
+        <a class="link link-hover">Cookie policy</a>
+      </nav>
+      <form>
+        <h6 class="footer-title">Drop a Message</h6>
+        <fieldset class="w-80">
+          <label>Enter your email address</label>
+          <div class="join mt-1">
+            <input
+              type="text"
+              placeholder="username@site.com"
+              class="input input-bordered join-item"
+            />
+            <button class="btn bg-[#0E7A81] text-white join-item">
+              Subscribe
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </footer>
     <!-- modal -->
     <!-- You can open the modal using ID.showModal() method -->
     <button class="btn hidden" onclick="customModal.showModal()">
