@@ -7,7 +7,8 @@ const addToLikedPets = (pet) => {
   petThumbnail.classList =
     "rounded-lg border p-2 shadow-md bg-white flex flex-col items-center ";
 
-  petThumbnail.innerHTML = `<img src="${pet.image}" alt="${pet.pet_name}" class="h-32 w-40 object-cover rounded-md mx-auto">
+  petThumbnail.innerHTML = ` 
+  <img src="${pet.image}" alt="${pet.pet_name}" class="h-32 w-40 object-cover rounded-md mx-auto">
     
   `;
 
